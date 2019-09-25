@@ -1,0 +1,9 @@
+language: node_js
+
+node_js:
+  - "11"
+
+script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t masakiiii/nodehhtp:latest .
+  - docker push masakiiii/nodehttp:latest
