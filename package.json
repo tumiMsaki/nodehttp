@@ -1,0 +1,10 @@
+{
+  "name": "dockertest",
+  "version": "1.0.0",
+  "description": "node doceker",
+  "author": "masaki",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
